@@ -1,0 +1,68 @@
+<html>
+    
+<head>
+  <title>hubway</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/timeSeriesStyle.css">
+    <link rel="stylesheet" href="css/global.css"/>
+
+</head>
+    
+<body>
+    <div id="intro">
+        <img class="bike" src="bike.gif">
+        <div>
+            <p class="introP">Hubway<br>Top Trips</p>
+            <p class="subtitle">Explore the 10 most popular trips taken with Hubway, Boston's bike sharing system, through time and geography. Click and drag on timeline to filter data. Stations are sorted by decreasing number of trips, hover over a start station to see its popular destinations.  <br><br>A d3.js coding-collaboration between<br> Jessie Richards + Jin Wang </p>
+        </div>   
+    </div>
+    
+    <div id="content" class="container">
+        <div id="title"></div>
+<!--        <div id="explore">Click and drag on timeline to explore trips <br><br> Hover over start station for its popular destinations</div>-->
+        <div id="plot">
+        </div>
+        <div id="left">
+            <div class="ranges"> 
+                    <div class="date">
+                        <p>
+                            date range: &nbsp;&nbsp;&nbsp;
+                            <span class="start-date"></span>
+                            <span class="end-date"></span>
+                        </p>
+                    </div>
+                    <div class="tripNum">
+                        <p>
+                            # of trips: &nbsp;&nbsp;
+                            <span class="count"></span>
+                        </p>
+                    </div>
+            </div>
+<!--            <div id="select">Select start station for popular trips</div>-->
+            <div id="trips">
+                <div id="stations">
+                    <div id="startBox">
+                        <p>start stations</p>
+                    </div>
+                    <div id="lineBox"></div>
+                    <div id="endBox">
+                        <p>end stations</p>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        
+        <div id="map"></div>
+        
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="lib/queue/queue.min.js"></script>
+    <script src="lib/crossfilter/crossfilter.js"></script>
+    <script src="data/neighborhoods2.js"></script>
+    <script src="script.js"></script>
+</body>
+    
+</html>

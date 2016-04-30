@@ -1,0 +1,197 @@
+text{font-family: Helvetica;}
+body {margin:0;padding:0}
+
+.date .start-date, .end-date, .count, .stationText{
+    font-size:10px;
+    font-weight:500;
+}
+.container{
+    width:1200px;
+    height:900px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:20px;
+}
+#content{
+    margin-top:20px;
+}
+#intro{
+    background-color: #4AA948;
+    width:100%;
+    height:90vh;
+}
+.introP{
+    font-size:7em;
+    font-weight:700;
+    color:white;
+    position:absolute;
+    top:100px;
+    left:36.5%;
+    width:400px;
+}
+.subtitle{
+    font-size:1.2em;
+    font-weight:300;
+    color:white;
+    position:absolute;
+    top:450px;
+    left:36.5%;
+    width:380px;
+    
+}
+.bike{
+    top:81vh;
+    left:8%;
+    position:absolute;
+    width:100px;
+}
+#explore{
+    font-weight:300;
+    font-size:.9em;
+    position:absolute;
+    top:0;
+    color: #4AA948;
+}
+#select{
+    font-weight:300;
+    font-size:.9em;
+    position:absolute;
+    top:230;
+    opacity:.5;
+}
+#left{
+    width:650px;
+    height: 500px;
+    float:left;
+    margin-top:10px;
+}
+.ranges{
+    width:100%;
+    height:40px;
+    margin-top:-2em;
+    margin-bottom:3em;
+}
+.date{
+    width:180px;
+}
+.date p{
+    font-weight:300;
+    font-size: .8em;
+}
+
+.tripNum{
+    width:180px;
+
+}
+.tripNum p{
+    font-weight:300;
+    font-size:.8em;
+}
+#start-date  #end-date #count {
+    font-size:.9em;
+}
+
+
+/*time series css*/
+#plot{
+    height: 180px;
+    width:1200px;
+}
+#trips{
+    width:650px;
+    height:500px;
+    margin-top:-20px;
+}
+
+
+/*top stations css*/
+#stations{
+    height:450px;
+    width:100%;
+}
+#stations p{
+    font-weight:300;
+    font-size: .8em;
+    margin-top:0px;
+    margin-bottom:2.75em;
+}
+#startBox{
+    width:38%;
+    float:left;
+}
+#startBox p{
+    text-align:right;
+}
+.stationText{
+    font-size: .9em;
+    font-weight:500;
+    
+}
+.startText{
+    text-align: right;
+    margin-bottom:2.75em;
+}
+.endText{
+    opacity:.8;
+    margin-bottom:2.75em;
+    color: #4AA948;
+}
+.green{
+    color:#4AA948;
+    text-align: right;
+    font-weight:500;
+    margin-bottom:2.75em;
+    font-size: .9em;
+}
+#lineBox{
+    width:24%;
+    height:100%;
+    float:left;
+}
+#endBox{
+    width:38%;
+    float:left;
+}
+
+
+/*map css*/
+#map{
+    width:500px;
+    height:500px;
+    float:left;
+    margin-left:50px;
+}
+#neighborhoods path{
+    fill:rgb(230,230,230);
+    stroke-width:0.5px;
+    stroke: white;
+}
+.greenCircle{
+    fill: #4AA948;
+    opacity:1;
+}
+.greenCircle2{
+    fill: #4AA948;
+    opacity:5;
+}
+.circle{
+    fill: rgb(220,220,220);
+}
+.bars{
+    fill:#4AA948;
+}
+
+.axisFont{
+    font-size:.8em;
+    font-weight:300;
+}
+.axis line{
+    stroke:#000;
+    stroke-width:1px;
+}
+.visibleLine{
+    visibility: visible;
+}
+.invisibleLine{
+    visibility: hidden;
+}
