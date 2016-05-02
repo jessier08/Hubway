@@ -34,8 +34,8 @@ var stationsName = d3.map(),
 
 ////// LOAD DATA //////
 queue()
-    .defer(d3.csv,'../data/hubway_trips_reduced.csv',parse)
-    .defer(d3.csv,'../data/hubway_stations_namesEdit.csv',parseStations)
+    .defer(d3.csv,'data/hubway_trips_reduced.csv',parse)
+    .defer(d3.csv,'data/hubway_stations_namesEdit.csv',parseStations)
     .await(dataLoaded);
 
 function dataLoaded(err,trips,stations){
